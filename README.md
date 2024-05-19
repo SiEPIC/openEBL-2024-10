@@ -76,3 +76,6 @@ Optional: The verification and merging is performed using GitHub actions. The re
 4) Merging the designs from the "submissions" folder, and outputing merged layout as an Artifact in the main repository
 
 ## Latest Merge Layout File
+<!-- start-link -->
+https://github.com/SiEPIC/openEBL-2024-10/actions/runs/9149098427/artifacts/1517271899
+<!-- end-link -->
