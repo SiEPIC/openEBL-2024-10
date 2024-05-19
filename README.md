@@ -3,8 +3,8 @@
 
 - The Silicon Electronic Photonics Integrated Circuits (SiEPIC) fabrication program, <a href="https://siepic.ca/fabrication/">SiEPICfab</a>, presents the open electron beam lithography (EBL) fabrication process, where former and current students of <a href="https://siepic.ca/education/">SiEPIC</a> workshops and courses can submit their design for manufacturing and testing.
 - More details about <a href="https://siepic.ca/openEBL/">openEBL</a>.
-- This fabrication run has a deadline of October 12, 2024.
-- The previous submission was in [May 2024](https://github.com/SiEPIC/openEBL-2024-05). 
+- **Submission deadline: October 12, 2024.**
+- The previous submission was in [May 2024](https://github.com/SiEPIC/openEBL-2024-05). You can look at this previous designs for inspiration.
 
 # Fabrication process: Passive Silicon
 ## Technical summary:
@@ -32,14 +32,14 @@ The submission involves several steps. First, you need to create your design(s) 
 
 ## Design software and PDK installation instructions:
  - Design tools and process design kit (SiEPIC-EBeam-PDK, KLayout implementation)<a href="https://github.com/siepic/SiEPIC_EBeam_PDK/wiki/Installation-instructions"> installation instructions</a>.
- - Create your design using Python ([example Jupyter notebook](https://colab.research.google.com/drive/1q3PU5ESmOa171J6KOkiUUlVXPnPBuCg-?usp=sharing), [example Python file](https://github.com/SiEPIC/openEBL-2024-05/blob/main/submissions/KLayout%20Python/EBeam_LukasChrostowski_MZI.py)) or using the Graphical Interface in KLayout
+ - Create your design using Python ([example Jupyter notebook](https://colab.research.google.com/drive/1q3PU5ESmOa171J6KOkiUUlVXPnPBuCg-?usp=sharing), [example Python file](https://github.com/SiEPIC/openEBL-2024-10/blob/main/submissions/KLayout%20Python/EBeam_LukasChrostowski_MZI.py)) or using the Graphical Interface in KLayout
 
 ## Submission via GitHub
  - [Watch this video for a demonstration](https://kaltura.clemson.edu/media/t/1_iwysnxub)
  - Create an account on GitHub
  - Fork a copy of this GitHub repository into your own account:  <a href="../../fork">Create a new fork</a>.
  - Turn on the GitHub Actions on your forked repository: <a href="../../actions">Actions</a> (In your repository's page on GitHub, click on Actions in the top-menu bar, and Enable the workflows).
- - [Optional] Install GitHub Desktop (or git) on your computer, and Clone a local copy: <a href="x-github-client://openRepo/https://github.com/SiEPIC/openEBL-2024-02">Open with GitHub Desktop</a>
+ - [Optional] Install GitHub Desktop (or git) on your computer, and Clone a local copy: <a href="x-github-client://openRepo/https://github.com/SiEPIC/openEBL-2024-10">Open with GitHub Desktop</a>
  - Create your design, and ensure that the filename contains your <a href="https://www.edx.org/learn/engineering/university-of-british-columbia-silicon-photonics-design-fabrication-and-data-ana">edX.org</a> (or GitHub username if the edX one is a random string that does not contain your name), and be formatted according to the course/workshop as follows:
    - EBeam_username.oas: for the <a href="https://www.edx.org/learn/engineering/university-of-british-columbia-silicon-photonics-design-fabrication-and-data-ana">edX Phot1x silicon photonics design course</a>
    - ELEC413_username.oas: for the <a href="https://ece.ubc.ca/courses/elec-413/">UBC ELEC 413 course</a>
@@ -52,7 +52,7 @@ The submission involves several steps. First, you need to create your design(s) 
     - Click Commit changes, and wait for the verification (via GitHub actions) to complete. This will appear as a green checkmark or red X next to your commit on GitHub. 
     - If there are errors, please review and correct the errors.
     - Please run your verification locally (press V in KLayout), or download the output .lydrb verification file from GitHub and open in KLayout.
- -  "All checks have failed" <img width="864" alt="image" src="https://github.com/SiEPIC/openEBL-2024-05/assets/15843200/d5689514-eca0-423f-9288-b20ec4fdd5e9">
+ -  Look for errors -- "All checks have failed" <img width="864" alt="image" src="https://github.com/SiEPIC/openEBL-2024-05/assets/15843200/d5689514-eca0-423f-9288-b20ec4fdd5e9">
     - Click on Details
     - In the main, window expand the "Run layout verification"; see if there is a text description of the problem
     - Look for the Artifact file; download it and open it in KLayout
@@ -68,8 +68,8 @@ The submission involves several steps. First, you need to create your design(s) 
 - We perform IP replacement on several cells (grating couplers). We call these cells Black Box (BB), and you can identify them by _BB in the cell name, or the presence of the Blackbox layer 998/0 in the cell.
 - You must not change the name of the cell, the contents, nor cell origins. Otherwise, the replacement will not work correctly.
 
-## Automated GitHub Actions
-Optional: The verification and merging is performed using GitHub actions. The repository implements the following:
+## FYI – Automated GitHub Actions
+The verification and merging is performed using GitHub actions. The repository implements the following:
 1) Running the Python files in the "submissions/KLayout Python" folder, to generate the designs
 2) Performing Manufacturing DRC verification on the designs in the "submissions" folder, and outputing the errors as an Artifact
 3) Performing Functional verification on the designs in the "submissions" folder, and outputing the errors as an Artifact
