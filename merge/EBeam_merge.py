@@ -141,12 +141,19 @@ import subprocess
 import pandas as pd
 for f in [f for f in files_in if '.oas' in f.lower() or '.gds' in f.lower()]:
     basefilename = os.path.basename(f)
-    # get the time the file was last updated from the Git repository 
-    a = subprocess.run(['git', '-C', os.path.dirname(f), 'log', '-1', '--pretty=%ci',  basefilename], stdout = subprocess.PIPE) 
-    filedate = pd.to_datetime(str(a.stdout.decode("utf-8"))).strftime("%Y%m%d_%H%M")
+
+    # GitHub Action gets the actual time committed.  This can be done locally
+    # via git restore-mtime.  Then we can load the time from the file stamp
+
+    filedate = datetime.fromtimestamp(os.path.getmtime(f)).strftime("%Y%m%d_%H%M")
     log("\nLoading: %s, dated %s" % (os.path.basename(f), filedate))
-    # rather than getting it from the disk, which is not correct:
-    #  filedate = datetime.fromtimestamp(os.path.getmtime(f)).strftime("%Y%m%d_%H%M")
+
+    # Tried to get it from GitHub but that didn't work:
+    # get the time the file was last updated from the Git repository 
+    # a = subprocess.run(['git', '-C', os.path.dirname(f), 'log', '-1', '--pretty=%ci',  basefilename], stdout = subprocess.PIPE) 
+    # filedate = pd.to_datetime(str(a.stdout.decode("utf-8"))).strftime("%Y%m%d_%H%M")
+    #filedate = os.path.getctime(os.path.dirname(f)) # .strftime("%Y%m%d_%H%M")
+    
   
     # Load layout  
     layout2 = pya.Layout()
