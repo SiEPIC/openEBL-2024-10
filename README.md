@@ -17,13 +17,13 @@
 ## Layer table
 | Name            | Layer/datatype | Description                                                                          |
 |-----------------|----------------|--------------------------------------------------------------------------------------|
-| Si  | 1/0 | Layer to draw silicon geometries |
-| Floorplan | 99/0 | Marks the layout design area |
-| Text | 10/0 | Text labels for automated measurements |
-| DevRec | 68/0 | Device recognition layer for component connectivity, netlist extraction, and verification|
+| Si  | 1/0 | [Fabricated] Layer to draw silicon geometries |
+| Floorplan | 99/0 | [Virtual] Marks the layout design area |
+| Text | 10/0 | [Virtual] Text labels for automated measurements |
+| DevRec | 68/0 | [Virtual] Device recognition layer for component connectivity, netlist extraction, and verification|
 | PinRec  | 1/10  | Port/pins recognition layer for component connectivity, netlist extraction, and verification|
-| Waveguide | 1/99 | Virtual layer, guiding shape for waveguide, used for length calculation |
-| SEM | 200/0 | Requests for SEM images. Rectangles in a 4:3 aspect |
+| Waveguide | 1/99 | [Virtual] Guiding shape for waveguide, used for length calculation |
+| SEM | 200/0 | [Virtual] Requests for SEM images. Rectangles in a 4:3 aspect ratio |
 
 
 # Submission instructions:
