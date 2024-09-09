@@ -42,6 +42,7 @@ log_siepictools = False
 framework_file = 'EBL_Framework_1cm_PCM_static.oas'
 ubc_file = 'UBC_static.oas'
 
+debug = True
 
 # record processing time
 import time
@@ -158,6 +159,13 @@ for f in [f for f in files_in if '.oas' in f.lower() or '.gds' in f.lower()]:
     # Load layout  
     layout2 = pya.Layout()
     layout2.read(f)
+
+    # Debugging
+    if debug:
+        print('*** Cell names in layout %s, immediately after loading' % f)
+        for c in layout2.each_cell():
+            print(c.name)
+
 
     if 'ebeam' in basefilename.lower():
         course = 'edXphot1x'
@@ -277,9 +285,21 @@ for f in [f for f in files_in if '.oas' in f.lower() or '.gds' in f.lower()]:
                 log('  - WARNING: Cell was clipped to maximum size of %s X %s' % (cell_Width, cell_Height) )
                 log('  - clipped bounding box: %s' % bbox2.to_s() )
 
+            # Debugging
+            if debug:
+                print('*** Cell names in layout %s, before copy' % f)
+                for c in layout2.each_cell():
+                    print(c.name)
+
             # copy
             subcell.copy_tree(layout2.cell(cell2))  
-            
+
+            # Debugging
+            if debug and 0:
+                print('*** Cell names in layout %s, after copy' % f)
+                for c in subcell.each_cell():
+                    print(c.name)
+
             log('  - Placed at position: %s, %s' % (x,y) )
                 
             # Measure the height of the cell that was added, and move up
