@@ -17,7 +17,7 @@
 ## Layer table
 | Name            | Layer/datatype | Description                                                                          |
 |-----------------|----------------|--------------------------------------------------------------------------------------|
-| Si  | 1/99 | Layer to draw silicon geometries |
+| Si  | 1/0 | Layer to draw silicon geometries |
 | Floorplan | 99/0 | Marks the layout design area |
 | Text | 10/0 | Text labels for automated measurements |
 | DevRec | 68/0 | Device recognition layer for component connectivity, netlist extraction, and verification|
