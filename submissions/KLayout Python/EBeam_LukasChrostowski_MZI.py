@@ -2,7 +2,7 @@
 --- Simple MZI ---
   
 by Lukas Chrostowski, 2020-2024
-
+ 
   
    
 Example simple script to
