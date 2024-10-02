@@ -60,6 +60,7 @@ from SiEPIC.scripts import zoom_out, export_layout
 from SiEPIC.utils import find_automated_measurement_labels
 import os
 
+'''
 if Python_Env == 'Script':
     import importlib.util
     spam_spec = importlib.util.find_spec("siepic_ebeam_pdk")
@@ -72,6 +73,7 @@ if Python_Env == 'Script':
         path_GitHub = os.path.expanduser('~/Documents/GitHub/')
         sys.path.append(os.path.join(path_GitHub, 'SiEPIC_EBeam_PDK/klayout'))
         import siepic_ebeam_pdk
+'''
 
 # Output layout
 layout = pya.Layout()
