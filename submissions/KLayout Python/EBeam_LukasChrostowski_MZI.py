@@ -2,9 +2,9 @@
 --- Simple MZI ---
   
 by Lukas Chrostowski, 2020-2024
-
  
-   
+ 
+ 
 Example simple script to
  - create a new layout with a top cell
  - create an MZI
@@ -50,8 +50,10 @@ if Python_Env == 'Script':
 
 tech_name = 'EBeam'
 
-if SiEPIC.__version__ < '0.5.4':
+from packaging import version
+if version.parse(SiEPIC.__version__) < version.parse("0.5.4"):
     raise Exception("Errors", "This example requires SiEPIC-Tools version 0.5.4 or greater.")
+
 
 '''
 Create a new layout using the EBeam technology,
