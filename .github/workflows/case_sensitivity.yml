@@ -1,3 +1,5 @@
+name: Case Sensitivity check
+
 on:
   push:
     paths:
