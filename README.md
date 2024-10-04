@@ -12,7 +12,8 @@
 - Baseline process:
   - Single full etch, using a negative resist (HSQ)
   - Oxide cladding
-- Process Design Kit: [SiEPIC-EBeam-PDK](https://github.com/siepic/SiEPIC_EBeam_PDK) 
+- Process Design Kit: [SiEPIC-EBeam-PDK](https://github.com/siepic/SiEPIC_EBeam_PDK)
+- Chip fabrication by [Applied Nanotools](https://www.appliednt.com/nanosoi-fabrication-service/)
 
 ## Layer table
 | Name            | Layer/datatype | Description                                                                          |
