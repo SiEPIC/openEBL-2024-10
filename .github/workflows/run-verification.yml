@@ -73,7 +73,7 @@ jobs:
           else
             if [[ "${{ github.event_name }}" == "pull_request" || "${{ github.event_name }}" == "pull_request_target" ]]; then
               # triggered on pull request, get all changed / added files from forked repo
-              FILES=$(git diff --name-only --diff-filter=ACM FETCH_HEAD | grep -i -E '\.(gds|oas)$' | sed 's|^submissions/||')
+              FILES=$(git diff --name-only --diff-filter=ACM origin/main...HEAD  | grep -i -E '\.(gds|oas)$' | sed 's|^submissions/||')
             else
               # triggered push, locate the changed / added .gds and .oas files in the submission folder
               FILES=$(git diff --name-status --diff-filter=ACM --relative=submissions ${{ github.event.before }} ${{ github.sha }} submissions | grep -i -E '\.(gds|oas)$' | awk '{print $2}')
