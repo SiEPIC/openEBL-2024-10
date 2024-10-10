@@ -18,6 +18,8 @@ Jasmina Brar 12/08/23, and Lukas Chrostowski
 # gds file to run verification on
 gds_file = sys.argv[1]
 
+print('Running SiEPIC-Tools automated verification for file %s' % gds_file)
+
 try:
    # load into layout
    layout = pya.Layout()
