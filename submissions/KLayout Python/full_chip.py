@@ -62,4 +62,4 @@ def variable_delta_mzi_with_gc(delta_lengths: list[float] = [0]) -> gf.Component
     return cell
 
 if __name__ == "__main__":
-    variable_delta_mzi_with_gc(delta_lengths=list(np.linspace(0, 112.5, 10))).write_gds("./submissions/KLayout Python/EBeam_lbelangers2.gds")
+    variable_delta_mzi_with_gc(delta_lengths=list(np.linspace(0, 112.5, 10))).write_gds("./submissions/EBeam_lbelangers2.gds")
