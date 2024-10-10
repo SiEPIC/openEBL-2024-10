@@ -131,9 +131,9 @@ jobs:
             fi
 
             echo "Done verification on $file"
+            echo "$output" >> verification_output.txt
           done
 
-          echo "$output" > verification_output.txt
           echo "files_with_errors=$files_with_errors" >> $GITHUB_ENV
 
       - name: move output lyrdb files to new folder
