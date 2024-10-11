@@ -15,4 +15,4 @@ jobs:
         uses: mheap/automatic-approve-action@v1
         with:
           token: ${{ secrets.PAT }}
-          workflows: "run-verification.yml"
+          workflows: "run-verification.yml,case_sensitivity.yml"
