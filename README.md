@@ -78,5 +78,5 @@ The verification and merging is performed using GitHub actions. The repository i
 
 ## Latest Merge Layout File
 <!-- start-link -->
-https://github.com/SiEPIC/openEBL-2024-10/actions/runs/11308406368/artifacts/2049063376
+https://github.com/SiEPIC/openEBL-2024-10/actions/runs/11308489149/artifacts/2049078678
 <!-- end-link -->
