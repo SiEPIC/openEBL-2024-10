@@ -31,7 +31,7 @@ jobs:
 
       - name: install python packages
         run: |
-          pip install klayout SiEPIC siepic_ebeam_pdk packaging
+          pip install klayout SiEPIC siepic_ebeam_pdk packaging gdsfactory
 
       - name: run python scripts and get output gds / oas file
         run: |
