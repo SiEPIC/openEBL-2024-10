@@ -6,7 +6,7 @@ by Lukas Chrostowski, 2020-2024
  
  
 Example simple script to
- - choose the fabrication technology provided by Applied Nanotools,  using silicon nitride (SiN) waveguides
+ - choose the fabrication technology provided by Applied Nanotools, using silicon (Si) waveguides
  - use the SiEPIC-EBeam-PDK technology
  - using KLayout and SiEPIC-Tools, with function including connect_pins_with_waveguide and connect_cell
  - create a new layout with a top cell, limited a design area of 605 microns wide by 410 microns high.
