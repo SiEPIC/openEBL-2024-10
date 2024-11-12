@@ -3,6 +3,9 @@ Scripted layout for ring resonators using SiEPIC-Tools
 in the SiEPIC-EBeam-PDK "EBeam" technology
 
 by Lukas Chrostowski, 2024
+
+- Silicon waveguides
+- Several ring resonators with different radii and gap
  
 Use instructions:
 
@@ -160,7 +163,7 @@ print('Number of errors: %s' % num_errors)
 
 # Export for fabrication, removing PCells
 path = os.path.dirname(os.path.realpath(__file__))
-filename = os.path.splitext(os.path.basename(__file__))[0]
+filename, extension = os.path.splitext(os.path.basename(__file__))
 if export_type == 'static':
     file_out = export_layout(cell, path, filename, relative_path = '..', format='oas', screenshot=True)
 else:
