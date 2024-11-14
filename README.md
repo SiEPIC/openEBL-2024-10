@@ -81,3 +81,18 @@ https://github.com/SiEPIC/openEBL-2024-10/actions/runs/11804448351/artifacts/217
 
 ## Measurement data
 https://qdot-nexus.phas.ubc.ca:25683/s/JrRLMbya5fJKRZ7
+
+## SEM images of the fabricated designs
+
+Scanning electron microscope images of some of the devices from this fabrication run were taken, and are available in the "SEM images" folder, and shown here:
+
+
+![SEM image – adiabatic 1x2 splitter](./SEM%20images/CL_001.jpeg)
+![SEM image – Bragg grating coupler](./SEM%20images/CL_010.jpeg)
+![SEM image – subwavelength grating waveguides](./SEM%20images/CR_003.jpeg)
+![SEM image – Bragg grating](./SEM%20images/CL_011.jpeg)
+![SEM image – lithgraphy test structure](./SEM%20images/CL_006.jpeg)
+![SEM image – lithgraphy test structure](./SEM%20images/CL_007.jpeg)
+
+
+
