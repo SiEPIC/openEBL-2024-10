@@ -76,7 +76,8 @@ The verification and merging is performed using GitHub actions. The repository i
 3) Performing Functional verification on the designs in the "submissions" folder, and outputing the errors as an Artifact
 4) Merging the designs from the "submissions" folder, and outputing merged layout as an Artifact in the main repository
 
-## Latest Merge Layout File
-<!-- start-link -->
+## Merged Layout File
 https://github.com/SiEPIC/openEBL-2024-10/actions/runs/11804448351/artifacts/2178301598
-<!-- end-link -->
+
+## Measurement data
+https://qdot-nexus.phas.ubc.ca:25683/s/JrRLMbya5fJKRZ7
