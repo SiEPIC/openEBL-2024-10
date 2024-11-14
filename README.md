@@ -89,7 +89,7 @@ Scanning electron microscope images of some of the devices from this fabrication
 
 ![SEM image – adiabatic 1x2 splitter](./SEM%20images/CL_001.jpeg)
 ![SEM image – Bragg grating coupler](./SEM%20images/CL_010.jpeg)
-![SEM image – subwavelength grating waveguides](./SEM%20images/CR_003.jpeg)
+![SEM image – subwavelength grating waveguides](./SEM%20images/CL_003.jpeg)
 ![SEM image – Bragg grating](./SEM%20images/CL_011.jpeg)
 ![SEM image – lithgraphy test structure](./SEM%20images/CL_006.jpeg)
 ![SEM image – lithgraphy test structure](./SEM%20images/CL_007.jpeg)
