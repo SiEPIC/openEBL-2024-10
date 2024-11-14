@@ -24,10 +24,11 @@ jobs:
           fetch-depth: 0
 
         # can also specify python version if needed
-      - name: setup python
+      - name: setup python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11' 
+          cache: 'pip'
 
       - name: install python packages
         run: |

@@ -71,7 +71,7 @@ jobs:
 
       - name: install Python packages
         run: |
-          pip install klayout SiEPIC siepic_ebeam_pdk pandas
+          pip install klayout SiEPIC siepic_ebeam_pdk pandas packaging
           
       - name: run merge script
         run: |
